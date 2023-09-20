@@ -40,8 +40,7 @@ jobs:
         export PYTHONPATH=src
         pytest
     - name: Deployment
-      run: |
-        python -m run
+      run: python app.py
       env:
         GITHUB_TOKEN: ${{ secrets.PYTHON_KEY }}
       
