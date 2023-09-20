@@ -1,7 +1,5 @@
-# from app import index
+from app import index
 
 
-# def test_index():
-#     assert index() == "Hello, world!"
-
-print ('Hello, world11')
+def test_index():
+    assert index() == "Hello, world!"
