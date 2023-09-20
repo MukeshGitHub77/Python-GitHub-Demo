@@ -39,9 +39,5 @@ jobs:
         pip install pytest
         export PYTHONPATH=src
         pytest
-    - name: Deployment
-      run: python $GITHUB_WORKSPACE/src/app.py
-      env:
-        GITHUB_TOKEN: ${{ secrets.PYTHON_KEY }}
       
         
