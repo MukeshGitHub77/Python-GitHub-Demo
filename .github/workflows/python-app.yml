@@ -39,3 +39,7 @@ jobs:
         pip install pytest
         export PYTHONPATH=src
         pytest
+    - name: Deployment
+      env:
+        GITHUB_TOKEN: ${{ secrets.PYTHON_KEY }}
+        
